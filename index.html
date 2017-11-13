@@ -13,17 +13,29 @@
  				<img src="img/main-logo.png" width="100" height="50" alt="Логотип магазина мороженого Глейси">
  				</a>
       <ul class="site_navigation">
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="delivery&payment.html">Доставка и оплата</a></li>
-        <li><a href="about_company.html">О компании</a></li>
+        <li><a href="catalog.html">Каталог
+        	<ul>
+
+    	<li class="new-in-the-catalog"><a href="#">Новинки</a></li>
+        <li><a href="#"></a>Сливочное</li>
+        <li><a href="#"></a>Щербеты</li>
+        <li><a href="#"></a>Фруктовый лед</li>
+        <li><a href="#"></a>Мелорин</li>
+      </ul>
+      </a>
+      </li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">О компании</a></li>
       </ul>
       <!-- Здесь будет поиск -->
       <ul class="user_navigation">
         <li class="login_link"></li>
       </ul>
       <!-- Тут находится корзина -->
-      <p>С 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+      <ul class="header-info">
+        <li class="contacts-info">С 10 до 20, ежедневно</li>
+        <li class="contacts-info"><a class="tel:88124502525">8 812 450-25-25</a></li>
+      </ul>
     </nav>
   </header>
   <main class="container">
@@ -37,11 +49,11 @@
         <a class="slider-button" href="#">Давайте оба!</a>
       </div>
       <div class="slider2">
-        <p class="slider-title"></p>
-        <a class="slider-button" href="#"></a>
+        <p class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
+        <a class="slider-button" href="#">Давайте оба!</a>
       </div>
       <div class="slider3">
-        <p class="slider-title"></p>
+        <p class="slider-title">Пломбир с помадкой и клубничный щербет</p>
         <a class="slider-button" href="#"></a>
       </div>
       <div class="slider-control">
@@ -56,48 +68,56 @@
       <div class="raspberries">
         <h3>Малинка даром!</h3>
         <p>При покупку 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button>Хочу варенье!</button>
+        <button class="btn order-bonus-button">Хочу варенье!</button>
       </div>
       <div class="chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <button>Хочу шоколадки!</button>
+        <button class="btn order-bonus-button">Хочу шоколадки!</button>
       </div>
     </section>
     <section class="hit_sales">
       <h2 class="visually-hidden">Хит продаж</h2>
       <ul class="hit_list">
-        <li>
-          <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
+        <li class="catalog-item">
           <a href="catalog.html">
-    				<img src="img/hit_img1.png" alt="Изображение мороженого">
+    				<img src="img/hit_img1.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <h5 class="price">310 руб.</h5>
-          <span>кг</span>
+          <p class="price">310 руб.</p><span>кг</span>
+          <p><a class="item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+          <div class="sale-preview">
+            <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
+          </div>
         </li>
-        <li>
-          <h4>Сливочно-кофейное с кусочками шоколада</h4>
+        <li class="catalog-item">
           <a href="catalog.html">
-    				<img src="img/hit_img2.png" alt="Изображение мороженого">
+    				<img src="img/hit_img2.png" width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <h5 class="price">380 руб.</h5>
-          <span>кг</span>
+          <p class="price">380 руб.</p><span>кг</span>
+          <p><a class="item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+          <div class="sale-preview">
+            <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
+          </div>
         </li>
-        <li>
-          <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
+        <li class="catalog-item">
           <a href="catalog.html">
-    				<img src="img/hit_img3.png" alt="Изображение мороженого">
+    				<img src="img/hit_img3.png" width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <h5 class="price">355 руб.</h5>
-          <span>кг</span>
+          <p class="price">355 руб.</p><span>кг</span>
+          <p><a class="item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+          <div class="sale-preview">
+            <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
+          </div>
         </li>
-        <li>
-          <h4>Сливочное крем-брюле с карамельной подливокой</h4>
+        <li class="catalog-item">
           <a href="catalog.html">
-    				<img src="img/hit_img4.png" alt="Изображение мороженого">
+    				<img src="img/hit_img4.png" width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <h5 class="price">415 руб.</h5>
-          <span>кг</span>
+          <p class="price">415 руб.</p><span>кг</span>
+          <p><a class="item-name" href="#">Сливочное крем-брюле с карамельной подливокой</a></p>
+          <div class="sale-preview">
+            <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -111,10 +131,9 @@
         <li class="company-info-element">Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
       </ul>
     </section>
-    <article>
-      <h2 class="visually-hidden">Новое в нашем блоге</h2>
+    <article class="new-in-the-blog">
       <h3>Новое в нашем блоге</h3>
-      <a href="gllacy-blog.ru">
+      <a href="#">
         <p>10 способов серверовки фруктовых щербетов к столу</p>
       </a>
     </article>
@@ -126,7 +145,7 @@
     <section class="map">
       <h2 class="visually-hidden">Наше месторасположение</h2>
       <a class="map_image">
-    		<img src="img/map.png" alt="Карта">
+    		<img src="img/map.png" alt="Карта" href="#">
     	</a>
       <div>
         <ul>
@@ -150,16 +169,18 @@
       </ul>
     </div>
     <div class="footer-info">
-      <p><strong>Для поставщиков</strong></p>
-      <p>О производстве</p>
-      <p>Наши документы</p>
-      <p>Экологические стандарты</p>
+      <ul>
+        <li class="for-suppliers"><strong><a href="#">Для поставщиков</a></strong></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
     </div>
     <p class="footer-copyright">
-      <a href="https://htmlacademy.ru">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
         		<img src="img/htmlacademy-logo.png" alt="Логотип HTML Academy">
     		</a>
-      <b>Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> © 2016</b>
+      <b>Сделано в <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2016</b>
     </p>
   </footer>
 </body>
