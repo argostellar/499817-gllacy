@@ -27,11 +27,34 @@
       <li><a href="#">Доставка и оплата</a></li>
       <li><a href="#">О компании</a></li>
       </ul>
-      <!-- Здесь будет поиск -->
+      <div class="pop-up search-block">
+        <form action="" method="">
+          <label class="visually-hidden" for="search-field">Поиск</label>
+          <input type="search" id="search-field" name="search" value="Что ищем?">
+        </form>
+      </div>
       <ul class="user_navigation">
         <li class="login_link"></li>
+        <li>
+          <div class="pop-up user_navigation_block">
+            <form action="" method="">
+              <label class="visually-hidden" for="e-mail-field">Электронная почта</label>
+              <input type="text" name="e-mail" id="e-mail-field" value="Электронная почта">
+              <label class="visually-hidden" for="password-field">Пароль</label>
+              <input type="text" name="password" id="password-field" value="Пароль">
+              <button class="btn">Войти</button>
+              <a class="link" href="#">Забыли пароль?</a>
+              <a class="link" href="#">Новая регистрация</a>
+            </form>
+          </div>
+        </li>
       </ul>
-      <!-- Тут находится корзина -->
+      <div class="pop-up cart-block">
+        <h2 class="visually-hidden">Блок корзины</h2>
+        <form action="" method="">
+          <button class="btn">Оформить заказ</button>
+        </form>
+      </div>
       <ul class="header-info">
         <li class="contacts-info">С 10 до 20, ежедневно</li>
         <li class="contacts-info"><a class="tel:88124502525">8 812 450-25-25</a></li>
@@ -39,7 +62,8 @@
     </nav>
   </header>
   <main class="container">
-    <h1 class="visually-hidden">Сливочное мороженое</h1>
+    <h1 class="visually-hidden">Каталог сливочного мороженого</h1>
+    <h2>Сливочное мороженое</h2>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -47,7 +71,44 @@
     </ul>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будут настройки фильтра-->
+      <form>
+        <label for="sorting-field">Сортировка:</label>
+        <select name="sorting" id="sorting-field">
+          <option value="popularity-sorting">по популярности</option>
+          <option value="less-expensive-sorting">сначала недорогие</option>
+          <option value="more-expensive-sorting">сначала дорогие</option>
+          <option value="fat-content-sorting">по жирности</option>
+        </select>
+        <label for="price-range-field">Цена:</label>
+        <input type="range" min="100 руб." max="500 руб." id="price-range-field">
+        <fieldset for="fat-content-field">
+          <legend class="visually-hidden">Жирность в процентах</legend>
+          <h3>Жирность:</h3>
+          <label for="fat-content-0%">0%</label>
+          <input type="radio" name="fat-content" id="fat-content-0%">
+          <label for="fat-content-less-10%">до 10%</label>
+          <input type="radio" name="fat-content" id="fat-content-less-10%" checked>
+          <label for="fat-content-less-30%">до 30%</label>
+          <input type="radio" name="fat-content" id="fat-content-less-30%">
+          <label for="fat-content-more-30%">выше 30%</label>
+          <input type="radio" name="fat-content" id="fat-content-more-30%">
+        </fieldset>
+        <fieldset for="filler-field">
+          <legend class="visually-hidden">Различные наполнители для мороженого</legend>
+          <h3>Наполнители:</h3>
+          <label for="chocolate-filler">шоколадные</label>
+          <input type="checkbox" name="filler" id="chocolate-filler" checked>
+          <label for="sugar-powder-filler">сахарные присыпки</label>
+          <input type="checkbox" name="filler" id="sugar-powder-filler" checked>
+          <label for="fruit-filler">фрукты</label>
+          <input type="checkbox" name="filler" id="fruit-filler">
+          <label for="syrup-filler">сиропы</label>
+          <input type="checkbox" name="filler" id="syrup-filler">
+          <label for="jam-filler">джемы</label>
+          <input type="checkbox" name="filler" id="jam-filler">
+        </fieldset>
+        <button class="btn filter-btn">Применить</button>
+      </form>
     </section>
     <section>
       <h2 class="visually-hidden">Список сливочных мороженых</h2>
