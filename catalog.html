@@ -17,10 +17,10 @@
         	<ul>
 
     	<li class="new-in-the-catalog"><a href="#">Новинки</a></li>
-        <li><a href="#"></a>Сливочное</li>
-        <li><a href="#"></a>Щербеты</li>
-        <li><a href="#"></a>Фруктовый лед</li>
-        <li><a href="#"></a>Мелорин</li>
+        <li><a href="#">Сливочное</a></li>
+        <li><a href="#">Щербеты</a></li>
+        <li><a href="#">Фруктовый лед</a></li>
+        <li><a href="#">Мелорин</a></li>
       </ul>
       </a>
       </li>
@@ -29,19 +29,25 @@
       </ul>
       <div class="pop-up search-block">
         <form action="" method="">
-          <label class="visually-hidden" for="search-field">Поиск</label>
-          <input type="search" id="search-field" name="search" value="Что ищем?">
+          <p>
+            <label for="search-field" aria-label="Поиск"></label>
+            <input type="search" id="search-field" name="search" value="Что ищем?">
+          </p>
         </form>
       </div>
       <ul class="user_navigation">
-        <li class="login_link"></li>
+        <li class="login_link">
+          <a class="login_link" href="#">Вход</a>
+        </li>
         <li>
           <div class="pop-up user_navigation_block">
             <form action="" method="">
-              <label class="visually-hidden" for="e-mail-field">Электронная почта</label>
-              <input type="text" name="e-mail" id="e-mail-field" value="Электронная почта">
-              <label class="visually-hidden" for="password-field">Пароль</label>
-              <input type="text" name="password" id="password-field" value="Пароль">
+              <p>
+                <label for="e-mail-field" aria-label="Электронная почта"></label>
+                <input type="text" name="e-mail" id="e-mail-field" value="Электронная почта">
+                <label for="password-field" aria-label="Пароль"></label>
+                <input type="text" name="password" id="password-field" value="Пароль">
+              </p>
               <button class="btn">Войти</button>
               <a class="link" href="#">Забыли пароль?</a>
               <a class="link" href="#">Новая регистрация</a>
@@ -49,11 +55,29 @@
           </div>
         </li>
       </ul>
-      <div class="pop-up cart-block">
-        <h2 class="visually-hidden">Блок корзины</h2>
-        <form action="" method="">
-          <button class="btn">Оформить заказ</button>
-        </form>
+      <div class="pop-up cart-block" aria-label="Блок корзины">
+        <table class="cart-block-table">
+          <tr>
+            <td>
+              <button type="button" class="close-button-small">X</button>
+            </td>
+            <td><img src="img/ice_img1_mini" width="33" height="33" alt="Маленькое изображение мороженого"></td>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td>1,5 кг х <span class="grey-text">200 руб.</span></td>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="close-button-small">X</button>
+            </td>
+            <td><img src="img/ice_img3_mini" width="33" height="33" alt="Маленькое изображение мороженого"></td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td>1,5 кг х <span class="grey-text">300 руб.</span></td>
+            <td>450 руб.</td>
+          </tr>
+        </table>
+        <p class="bold-text">Итого: 750 руб.</p>
+        <a class="btn" href="#">Оформить заказ</a>
       </div>
       <ul class="header-info">
         <li class="contacts-info">С 10 до 20, ежедневно</li>
@@ -72,40 +96,51 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form>
-        <label for="sorting-field">Сортировка:</label>
-        <select name="sorting" id="sorting-field">
-          <option value="popularity-sorting">по популярности</option>
-          <option value="less-expensive-sorting">сначала недорогие</option>
-          <option value="more-expensive-sorting">сначала дорогие</option>
-          <option value="fat-content-sorting">по жирности</option>
-        </select>
-        <label for="price-range-field">Цена:</label>
-        <input type="range" min="100 руб." max="500 руб." id="price-range-field">
+        <p>
+          <label for="sorting-field">Сортировка:</label>
+          <select name="sorting" id="sorting-field">
+            <option value="popularity-sorting">по популярности</option>
+            <option value="less-expensive-sorting">сначала недорогие</option>
+            <option value="more-expensive-sorting">сначала дорогие</option>
+            <option value="fat-content-sorting">по жирности</option>
+          </select>
+        </p>
+        <p>
+          <label for="price-range-field">Цена:</label>
+          <input type="range" min="100 руб." max="500 руб." id="price-range-field">
+          <div class="price-range">
+            <div class="price-slide"></div>
+            <div class="price-pointer">
+              <div class="pointer-left"></div>
+              <div class="pointer-right"></div>
+            </div>
+          </div>
+        </p>
         <fieldset for="fat-content-field">
           <legend class="visually-hidden">Жирность в процентах</legend>
           <h3>Жирность:</h3>
           <label for="fat-content-0%">0%</label>
-          <input type="radio" name="fat-content" id="fat-content-0%">
+          <input type="radio" name="fat-content-0%" id="fat-content-0%">
           <label for="fat-content-less-10%">до 10%</label>
-          <input type="radio" name="fat-content" id="fat-content-less-10%" checked>
+          <input type="radio" name="fat-content-less-10%" id="fat-content-less-10%" checked>
           <label for="fat-content-less-30%">до 30%</label>
-          <input type="radio" name="fat-content" id="fat-content-less-30%">
+          <input type="radio" name="fat-content-less-30%" id="fat-content-less-30%">
           <label for="fat-content-more-30%">выше 30%</label>
-          <input type="radio" name="fat-content" id="fat-content-more-30%">
+          <input type="radio" name="fat-content-more-30%" id="fat-content-more-30%">
         </fieldset>
         <fieldset for="filler-field">
           <legend class="visually-hidden">Различные наполнители для мороженого</legend>
           <h3>Наполнители:</h3>
           <label for="chocolate-filler">шоколадные</label>
-          <input type="checkbox" name="filler" id="chocolate-filler" checked>
+          <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
           <label for="sugar-powder-filler">сахарные присыпки</label>
-          <input type="checkbox" name="filler" id="sugar-powder-filler" checked>
+          <input type="checkbox" name="sugar-powder-filler" id="sugar-powder-filler" checked>
           <label for="fruit-filler">фрукты</label>
-          <input type="checkbox" name="filler" id="fruit-filler">
+          <input type="checkbox" name="fruit-filler" id="fruit-filler">
           <label for="syrup-filler">сиропы</label>
-          <input type="checkbox" name="filler" id="syrup-filler">
+          <input type="checkbox" name="syrup-filler" id="syrup-filler">
           <label for="jam-filler">джемы</label>
-          <input type="checkbox" name="filler" id="jam-filler">
+          <input type="checkbox" name="jam-filler" id="jam-filler">
         </fieldset>
         <button class="btn filter-btn">Применить</button>
       </form>
