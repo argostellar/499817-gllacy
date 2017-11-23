@@ -13,22 +13,20 @@
  				<img src="img/main-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
  				</a>
       <ul class="site_navigation">
-        <li class="main-navigation-current"><a href="catalog.html">Каталог
-        	<ul>
-
-    	<li class="new-in-the-catalog"><a href="#">Новинки</a></li>
-        <li><a href="#">Сливочное</a></li>
-        <li><a href="#">Щербеты</a></li>
-        <li><a href="#">Фруктовый лед</a></li>
-        <li><a href="#">Мелорин</a></li>
-      </ul>
-      </a>
-      </li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">О компании</a></li>
+        <li class="main-navigation-current"><a href="catalog.html">Каталог</a>
+          <ul>
+            <li class="new-in-the-catalog"><a href="#">Новинки</a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
       </ul>
       <div class="pop-up search-block">
-        <form action="" method="">
+        <form action="#" method="post">
           <p>
             <label for="search-field" aria-label="Поиск"></label>
             <input type="search" id="search-field" name="search" value="Что ищем?">
@@ -41,7 +39,7 @@
         </li>
         <li>
           <div class="pop-up user_navigation_block">
-            <form action="" method="">
+            <form action="#" method="post">
               <p>
                 <label for="e-mail-field" aria-label="Электронная почта"></label>
                 <input type="text" name="e-mail" id="e-mail-field" value="Электронная почта">
@@ -55,6 +53,7 @@
           </div>
         </li>
       </ul>
+      <button class="cart-button">2 товара</button>
       <div class="pop-up cart-block" aria-label="Блок корзины">
         <table class="cart-block-table">
           <tr>
@@ -81,13 +80,12 @@
       </div>
       <ul class="header-info">
         <li class="contacts-info">С 10 до 20, ежедневно</li>
-        <li class="contacts-info"><a class="tel:88124502525">8 812 450-25-25</a></li>
+        <li class="contacts-info"><a href="tel:+78124502525">8 812 450-25-25</a></li>
       </ul>
     </nav>
   </header>
   <main class="container">
-    <h1 class="visually-hidden">Каталог сливочного мороженого</h1>
-    <h2>Сливочное мороженое</h2>
+    <h1>Сливочное мороженое</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -152,7 +150,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img1.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">310 руб.</p><span>кг</span>
+          <span class="product_price">310<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -162,7 +160,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img2.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">380 руб.</p><span>кг</span>
+          <span class="product_price">380<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -172,7 +170,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img3.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">355 руб.</p><span>кг</span>
+          <span class="product_price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -182,7 +180,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img4.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">415 руб.</p><span>кг</span>
+          <span class="product_price">415<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -192,7 +190,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img5.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">325 руб.</p><span>кг</span>
+          <span class="product_price">325<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с брусничным джемом</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -202,7 +200,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img6.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">410 руб.</p><span>кг</span>
+          <span class="product_price">410<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-черничное с цельными ягодами черники</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -212,7 +210,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img7.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">375 руб.</p><span>кг</span>
+          <span class="product_price">375<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -222,7 +220,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img8.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">320 руб.</p><span>кг</span>
+          <span class="product_price">320<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с шоколадной стружкой</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -232,7 +230,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img9.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">440 руб.</p><span>кг</span>
+          <span class="product_price">440<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-ванильное с кусочками шоколада</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -242,7 +240,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img10.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">435 руб.</p><span>кг</span>
+          <span class="product_price">435<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с ментоловым сиропом</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -252,7 +250,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img11.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">355 руб.</p><span>кг</span>
+          <span class="product_price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с кусочками черного шоколада</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -262,7 +260,7 @@
           <a href="catalog.html">
     				<img src="img/ice_img12.png"  width="267" height="267" alt="Изображение мороженого">
     			</a>
-          <p class="price">420 руб.</p><span>кг</span>
+          <span class="product_price">420<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с мятным сиропом</a></p>
           <div class="sale-preview">
             <a class="btn quick_view_button" href="#">Быстрый просмотр</a>
@@ -281,15 +279,15 @@
   <footer class="main-footer">
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Твиттер</li>
-   				<li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#"><img src="img/social-Twitter.svg" alt="Twitter"></a></li> 
+   		<li><a class="social-button" href="#"><img src="img/social-intagram.svg" alt="Intagram"></a></li> 
+        <li><a class="social-button" href="#"><img src="img/social-Facebook.svg" alt="Facebook"></a></li> 
+        <li><a class="social-button" href="#"><img src="img/social-VK.svg" alt="VK"></a></li> 
       </ul>
     </div>
     <div class="footer-info">
       <ul>
-        <li class="for-suppliers"><strong><a href="#">Для поставщиков</a></strong></li>
+        <li class="for-suppliers"><img src="img/heart.svg"><strong><a href="#">Для поставщиков</a></strong></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
