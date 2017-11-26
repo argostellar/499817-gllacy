@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>GllacyShop: Магазин мороженого Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
  				</a>
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
-          <ul>
+          <ul class="catalog-navigation">
             <li class="new-in-the-catalog"><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -45,7 +46,7 @@
             <label for="password-field" aria-label="Пароль"></label>
             <input type="text" name="password" id="password-field" placeholder="Пароль">
           </p>
-          <button class="btn">Войти</button>
+          <button class="button enter-button">Войти</button>
           <a class="link" href="#">Забыли пароль?</a>
           <a class="link" href="#">Новая регистрация</a>
         </form>
@@ -75,7 +76,7 @@
       </div>
       <div class="slider3">
         <p class="slider-title">Пломбир с помадкой и клубничный щербет</p>
-        <a class="slider-button" href="#"></a>
+        <a class="slider-button" href="#">Давайте оба!</a>
       </div>
       <div class="slider-control">
         <label for="radio-hidden1"></label>
@@ -89,12 +90,12 @@
       <div class="raspberries">
         <h3>Малинка даром!</h3>
         <p>При покупку 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button class="btn order-bonus-button">Хочу варенье!</button>
+        <button class="button order-bonus-button">Хочу варенье!</button>
       </div>
       <div class="chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <button class="btn order-bonus-button">Хочу шоколадки!</button>
+        <button class="button order-bonus-button">Хочу шоколадки!</button>
       </div>
     </section>
     <section class="hit-sales">
@@ -107,7 +108,7 @@
           <span class="product-price">310<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
           <div class="sale-preview">
-            <a class="btn quick-view-button" href="#">Быстрый просмотр</a>
+            <a class="button quick-view-button" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -117,7 +118,7 @@
           <span class="product-price">380<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
           <div class="sale-preview">
-            <a class="btn quick-view-button" href="#">Быстрый просмотр</a>
+            <a class="button quick-view-button" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -127,7 +128,7 @@
           <span class="product-price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
           <div class="sale-preview">
-            <a class="btn quick-view-button" href="#">Быстрый просмотр</a>
+            <a class="button quick-view-button" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -137,7 +138,7 @@
           <span class="product-price">415<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
           <p><a class="item-name" href="#">Сливочное крем-брюле с карамельной подливокой</a></p>
           <div class="sale-preview">
-            <a class="btn quick-view-button" href="#">Быстрый просмотр</a>
+            <a class="button quick-view-button" href="#">Быстрый просмотр</a>
           </div>
         </li>
       </ul>
@@ -165,7 +166,7 @@
           <label for="subscribe-field" aria-label="Электронная почта для рассылки"></label>
           <input type="text" name="subscribe-e-mail" id="subscribe-field">
         </p>
-        <button class="btn">Отправить</button>
+        <button class="button subscribe-button ">Отправить</button>
       </form>>
     </section>
     <section class="map">
@@ -181,7 +182,7 @@
           <li class="bold-text">8 812 450-25-25</li>
           <li class="simple-text">(с 10 до 20 ежедневно)</li>
         </ul>
-        <a class="btn" href="contact-form.html">Форма обратной связи</a>
+        <a class="button feedback-form-button" href="contact-form.html">Форма обратной связи</a>
       </div>
       <div class="pop-up feedback" aria-label="Форма обратной связи">
         <button class="close-button">X</button>
@@ -199,7 +200,7 @@
             <label class="visually-hidden" for="feedback-text-field" aria-lable="Напишите что-нибудь здесь"></label>
             <textarea placeholder="Напишите что-нибудь..." id="feedback-text-field"></textarea>
           </p>
-          <button class="btn">Отправить</button>
+          <button class="button send-button">Отправить</button>
         </form>
       </div>
     </section>

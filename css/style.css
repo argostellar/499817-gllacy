@@ -1,18 +1,80 @@
-body
+body {
+	margin: 0;
+  	padding: 0;
+
+  	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 16px;
+  	line-height: 22px;
+  	font-weight: ;
+  	color: #ffffff;
+  	
+
+  	background-color: #849d8f; /*#8996a6; #9d8b84; */
+  	/*background-color: rgb(132, 157, 143); rgb(137, 150, 166); rgb(157, 139, 132);*/
+  	background-position: top center;
+  	background-repeat: no-repeat;
+}
 
 .main-header
-.main-navigation
+
+.main-navigation{
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
 .main-header-logo
-.site-navigation
-.new-in-the-catalog
-.search-block
+
+.site-navigation, .catalog-navigation {
+	list-style: none;
+}
+
+.site-navigtaion a {
+	color: #ffffff; 
+}
+
+.catalog-navigation a {
+	color: #323232; 333333
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #333333;
+	background-color: #f7f6f3;
+}
+
+.catalog-navigation a:hover {
+  background-color: #fbded7; 
+}
+
+.catalog-navigation a:focus {
+	background-color: #f6b5a5;
+}
+
+.new-in-the-catalog {
+	border-bottom: 1px solid #88a093; /* width: 128*/
+}
+.search-block {
+	width: 341px;
+	height: 84px;
+}
+
 .login-link
-.user-navigation-block
 
-.pop-up
+.user-navigation-block {
+	width: 277px;
+	height: 214px;
+}
 
-.btn
-.button
+.pop-up {
+	background-color: #f8f7f4; 
+}
+
+
+.button {
+	background-color: #ed5b3d;
+	color: #ffffff;
+}
 .page-button
 .close-button
 
@@ -21,8 +83,14 @@ body
 .visually-hidden
 
 .cart-button
-.cart-block
-.cart-block-table
+.cart-block {
+	width: 539px;
+	height: 242px;
+}
+.cart-block-table {
+	border-bottom: 1px solid #cacac7;
+
+}
 
 .header-info
 .contacts-info
@@ -30,45 +98,115 @@ body
 .container
 
 .main-slider
-.slider1
-.slider2
-.slider3
+.slider1 {
+	background-image: url(img/ice_cream_main1);
+}
+.slider2 {
+	background-image: url(img/ice_cream_main2);
+}
+.slider3 {
+	background-image: url(img/ice_cream_main3);
+}
 .slider-control
-.slider-button
-.slider-title
+.slider-button {
+	width: 273px;
+	height: 63px;
+}
+.slider-title {
+	font-size: 60px;
+	line-height: 60,35px;
+}
 
 .order-bonus
-.raspberries
-.chocolate
-.order-bonus-button
+.raspberries {
+	background-image: url(img/bg_raspberries.jpg);
+}
+.chocolate {
+	background-image: url(img/bg_chocolate.jpg);
+}
+.order-bonus-button {
+	width: 165px;
+	height: 46px;
+}
 
 .hit-sales
 .hit-list
-.catalog-item
-.quick-view-button
+.catalog-item:hover, .catalog-item:focus{
+	width: 293px;
+	height: 405px;
+}
+.quick-view-button {
+	width: 200px;
+	height: 44px;
+}
 .product-price
 .item-name
 .rub
 .sale-preview
 
-.company-info
-.company-info-header
-.company-info-element
+.company-info {
+	width: ;
+	height: ;
+	background-image: url(img/bg_waffle.jpg);
+}
+.company-info-header {
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: ;
+}
+.company-info-element {
+	color: #323232;
+}
 
-.new-in-the-blog
+.new-in-the-blog {
+	color: #353535;
+	background-image: url(img/bg_strawberries.jpg);
+}
+
+.new-in-the-blog p {
+	font-size: 24px;
+	font-weight: bold;
+}
 
 .subscribe
+.subscribe-button {
+	width: 128px;
+	height: 43px;
+}
 
 .map
-.map-image
+.map-image {
+	background-image: url(img/map.jpg);
+}
 
 .simple-text
-.bold-text
+.bold-text {
+	font-weight: bold;
+}
 
 .feedback
+.feedback-form-button {
+	width: 251px;
+	height: 43px;
+}
 
+.send-button {
+	width: 138px;
+	height: 43px;
+}
+.enter-button {
+	width: 100px;
+	height: 44px;
+}
+.order-button {
+	width: 170px;
+	height: 44px;
+}
 .main-footer
-.social-button
+.social-button {
+	background-color: #e6ebe9;
+}
 .footer-info
 .for-suppliers
 
@@ -85,7 +223,11 @@ body
 .price-pointer
 .pointer-left
 .pointer-right
-.filter-btn
+.filter-button {
+	width: 143px;
+	height: 36px;
+	background-color: #a6b7ae;
+}
 .pagination-list
 .pagination-item 
 .pagination-item-current
