@@ -74,13 +74,21 @@ body {
 .button {
 	background-color: #ed5b3d;
 	color: #ffffff;
+
+	border-radius: 5px;
 }
 .page-button
 .close-button
 
 .link
 
-.visually-hidden
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
 
 .cart-button
 .cart-block {
@@ -117,11 +125,18 @@ body {
 	line-height: 60,35px;
 }
 
-.order-bonus
+.order-bonus {
+	width: 1146px;
+	height: 229px;
+}
 .raspberries {
+	width: 560px;
+	height: 229px;
 	background-image: url(img/bg_raspberries.jpg);
 }
 .chocolate {
+	width: 560px;
+	height: 229px;
 	background-image: url(img/bg_chocolate.jpg);
 }
 .order-bonus-button {
@@ -129,7 +144,10 @@ body {
 	height: 46px;
 }
 
-.hit-sales
+.hit-sales {
+	width: 1146px;
+	height: 406px;
+}
 .hit-list
 .catalog-item:hover, .catalog-item:focus{
 	width: 293px;
@@ -145,8 +163,8 @@ body {
 .sale-preview
 
 .company-info {
-	width: ;
-	height: ;
+	width: 1146px;
+	height: 306px;
 	background-image: url(img/bg_waffle.jpg);
 }
 .company-info-header {
@@ -160,6 +178,9 @@ body {
 }
 
 .new-in-the-blog {
+	width: 560px;
+	height: 220px;
+
 	color: #353535;
 	background-image: url(img/bg_strawberries.jpg);
 }
@@ -169,23 +190,37 @@ body {
 	font-weight: bold;
 }
 
-.subscribe
+.subscribe {
+	width: 560px;
+	height: 220px;
+}
 .subscribe-button {
 	width: 128px;
 	height: 43px;
 }
 
-.map
+.map {
+	width: 1200px;
+	height: 430px;
+}
 .map-image {
 	background-image: url(img/map.jpg);
 }
-
-.simple-text
+.map-contact {
+	width: 302px;
+	height: 305px;
+}
+.simple-text {
+	font-weight: normal;
+}
 .bold-text {
 	font-weight: bold;
 }
 
-.feedback
+.feedback {
+	width: 477px;
+	height: 442px;
+}
 .feedback-form-button {
 	width: 251px;
 	height: 43px;
@@ -203,7 +238,11 @@ body {
 	width: 170px;
 	height: 44px;
 }
-.main-footer
+.main-footer {
+	width: 1200px;
+	height: 103px;
+}
+
 .social-button {
 	background-color: #e6ebe9;
 }
