@@ -5,7 +5,7 @@ body {
   	font-family: "Roboto", Arial, sans-serif;
   	font-size: 16px;
   	line-height: 22px;
-  	font-weight: ;
+  	font-weight: 400;
   	color: #ffffff;
   	
 
@@ -23,7 +23,26 @@ body {
 	color: #ffffff;
 }
 
-.main-header-logo
+.main-header-logo {
+	margin-top: 9px;
+	magrin-left: 52px;
+}
+
+.catalog-navigation {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: 400;
+  	color: #323232;
+}
+
+.site-navigation {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 16px;
+  	line-height: 18px;
+  	font-weight: 700;
+  	color: #ffffff;
+}
 
 .site-navigation, .catalog-navigation {
 	list-style: none;
@@ -53,17 +72,34 @@ body {
 
 .new-in-the-catalog {
 	border-bottom: 1px solid #88a093; /* width: 128*/
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: 700;
+  	color: #323232;
 }
 .search-block {
-	width: 341px;
-	height: 84px;
+	
 }
 
-.login-link
+.login-link-button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: px;
+	padding-right: 17px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #ffffff;
+}
 
 .user-navigation-block {
-	width: 277px;
-	height: 214px;
+	
 }
 
 .pop-up {
@@ -75,10 +111,30 @@ body {
 	background-color: #ed5b3d;
 	color: #ffffff;
 
+	padding: 2px;
 	border-radius: 5px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-weight: 700;
+  	color: #ffffff;
 }
-.page-button
-.close-button
+/*.page-button {
+	padding-top: px;
+	padding-bottom: px;
+	padding-left: px;
+	padding-right: px;
+
+	border-radius: 15px;
+}*/
+
+.close-button {
+	margin: 15px;
+
+}
+.close-button-small {
+	margin: 15px;
+}
+
 
 .link
 
@@ -90,10 +146,22 @@ body {
 	margin: -1px;
 }
 
-.cart-button
+.cart-button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: px;
+	padding-right: 35px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #ffffff;
+}
 .cart-block {
-	width: 539px;
-	height: 242px;
+	
 }
 .cart-block-table {
 	border-bottom: 1px solid #cacac7;
@@ -107,18 +175,28 @@ body {
 
 .main-slider
 .slider1 {
-	background-image: url(img/ice_cream_main1);
+	background-image: url(../img/ice_cream_main1);
 }
 .slider2 {
-	background-image: url(img/ice_cream_main2);
+	background-image: url(../img/ice_cream_main2);
 }
 .slider3 {
-	background-image: url(img/ice_cream_main3);
+	background-image: url(../img/ice_cream_main3);
 }
 .slider-control
 .slider-button {
-	width: 273px;
-	height: 63px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	border-radius: 32px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 32px;
+  	line-height: 44px;
+  	font-weight: 700;
+  	color: #ffffff;
 }
 .slider-title {
 	font-size: 60px;
@@ -126,133 +204,256 @@ body {
 }
 
 .order-bonus {
-	width: 1146px;
-	height: 229px;
+	
 }
 .raspberries {
-	width: 560px;
-	height: 229px;
-	background-image: url(img/bg_raspberries.jpg);
+	background-color: #6b1427;
+	background-image: url(../img/bg_raspberries.jpg);
 }
 .chocolate {
-	width: 560px;
-	height: 229px;
-	background-image: url(img/bg_chocolate.jpg);
+	background-color: #654134;
+	background-image: url(../img/bg_chocolate.jpg);
 }
 .order-bonus-button {
-	width: 165px;
-	height: 46px;
+	padding: 14px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	color: #ffffff;
 }
 
 .hit-sales {
-	width: 1146px;
-	height: 406px;
+	
 }
 .hit-list
 .catalog-item:hover, .catalog-item:focus{
-	width: 293px;
-	height: 405px;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 .quick-view-button {
-	width: 200px;
-	height: 44px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 17px;
+	padding-right: 17px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	color: #ffffff; 
+	
 }
-.product-price
-.item-name
+.product-price {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 35px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.product-price b {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-heigt: 22px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.item-name {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-heigt: 22px;
+	font-weight: 500;
+	color: #ffffff;
+	
+}
 .rub
 .sale-preview
 
 .company-info {
-	width: 1146px;
-	height: 306px;
-	background-image: url(img/bg_waffle.jpg);
+	background-color: #dcd0b6;
+	background-image: url(../img/bg_waffle.jpg);
+	color: #323232;
+
 }
 .company-info-header {
-	color: #323232;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: ;
+	font-weight: 500;
+	color: #323232;
 }
 .company-info-element {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-heigt: 22px;
 	color: #323232;
 }
 
 .new-in-the-blog {
-	width: 560px;
-	height: 220px;
+	background-color: #fac6ab;
+	background-image: url(../img/bg_strawberries.jpg);
 
-	color: #353535;
-	background-image: url(img/bg_strawberries.jpg);
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-heigt: 22px;
+	font-weight: 500;
+	color: #323232;
 }
 
 .new-in-the-blog p {
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 24px;
-	font-weight: bold;
+	line-heigt: 30px;
+	font-weight: 700;
+	color: #323232;
 }
 
 .subscribe {
-	width: 560px;
-	height: 220px;
+	background-color: #f8f7f4;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-heigt: 22px;
+	font-weight: 400;
+	color: #5a5a5a;
+	
 }
 .subscribe-button {
-	width: 128px;
-	height: 43px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 19px;
+	padding-right: 19px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	color: #ffffff;
+	
 }
 
 .map {
-	width: 1200px;
-	height: 430px;
+	background-color: #e0e1cc;
+	
 }
 .map-image {
-	background-image: url(img/map.jpg);
+	background-image: url(../img/map.jpg);
 }
 .map-contact {
-	width: 302px;
-	height: 305px;
+	background-color: #fdfefe;
+	font-family: "Roboto", Arial, sans-serif;
+	
 }
 .simple-text {
-	font-weight: normal;
+	font-size: 14px;
+  	line-height: 20px;
+	font-weight: 400;
+	color: #323232;
 }
 .bold-text {
-	font-weight: bold;
+	font-size: 18px;
+  	line-height: 24px;
+	font-weight: 700;
+	color: #323232;
 }
 
 .feedback {
-	width: 477px;
-	height: 442px;
+	background-color: #f8f7f4;
+	box-shadow: 0 0 500px 500px rgba(50,50,50,.3);
+	
 }
 .feedback-form-button {
-	width: 251px;
-	height: 43px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 24px;
+	padding-right: 24px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	color: #ffffff;
+	
 }
 
 .send-button {
-	width: 138px;
-	height: 43px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 19px;
+	padding-right: 19px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	color: #ffffff;
+	
 }
 .enter-button {
-	width: 100px;
-	height: 44px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border-radius: 15px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	color: #ffffff;
+	
 }
 .order-button {
-	width: 170px;
-	height: 44px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	border-radius: 15px;
 }
 .main-footer {
-	width: 1200px;
-	height: 103px;
+	
 }
 
 .social-button {
-	background-color: #e6ebe9;
+	margin: 6px;
+
+	background-color: rgba(255, 255, 255, 0.8);
 }
-.footer-info
-.for-suppliers
+.footer-info {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 13px;
+  	line-height: 18px;
+  	font-weight: 400;
+  	color: #ffffff;
+}
+.for-suppliers{
+	font-weight: 700;
+}
 
-.footer-copyright
+.footer-copyright {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 12px;
+  	line-height: 18px;
+  	font-weight: 400;
+  	color: #ffffff;
+}
 
-.close-button
-.close-button-small
 
 .breadcrumbs
 .breadcrumbs-current
@@ -263,9 +464,19 @@ body {
 .pointer-left
 .pointer-right
 .filter-button {
-	width: 143px;
-	height: 36px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border-radius: 15px;
 	background-color: #a6b7ae;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 16px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	color: #ffffff;
 }
 .pagination-list
 .pagination-item 
