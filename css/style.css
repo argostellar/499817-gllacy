@@ -15,6 +15,12 @@ body {
   	background-repeat: no-repeat;
 }
 
+a {
+	color: #ffffff;
+	text-decoration: none;
+
+}
+
 .main-header
 
 .main-navigation{
@@ -149,7 +155,7 @@ body {
 .cart-button {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: px;
+	padding-left: 5px;
 	padding-right: 35px;
 
 	border-radius: 15px;
@@ -160,6 +166,22 @@ body {
   	font-weight: 500;
   	color: #ffffff;
 }
+
+.cart-button::before {
+	content: " ";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    left: 10px;
+
+	background-image: url(../img/cart-empty.svg);
+	background-size: 21px 20px;
+	background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
 .cart-block {
 	
 }
@@ -209,10 +231,12 @@ body {
 .raspberries {
 	background-color: #6b1427;
 	background-image: url(../img/bg_raspberries.jpg);
+	background-repeat: no-repeat;
 }
 .chocolate {
 	background-color: #654134;
 	background-image: url(../img/bg_chocolate.jpg);
+	background-repeat: no-repeat;
 }
 .order-bonus-button {
 	padding: 14px;
@@ -347,6 +371,7 @@ body {
 }
 .map-image {
 	background-image: url(../img/map.jpg);
+
 }
 .map-contact {
 	background-color: #fdfefe;
@@ -418,6 +443,22 @@ body {
   	color: #ffffff;
 	
 }
+
+.enter-button::before {
+	content: " ";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    left: 10px;
+
+	background-image: url(../img/entry-idle.svg);
+	background-size: 21px 19px;
+	background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
 .order-button {
 	padding-top: 13px;
 	padding-bottom: 13px;
@@ -433,7 +474,6 @@ body {
 .social-button {
 	margin: 6px;
 
-	background-color: rgba(255, 255, 255, 0.8);
 }
 .footer-info {
 	font-family: "Roboto", Arial, sans-serif;
@@ -479,5 +519,32 @@ body {
   	color: #ffffff;
 }
 .pagination-list
-.pagination-item 
-.pagination-item-current
+.pagination-item {
+	margin-left: 10px;
+	margin-right: 10px;
+
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 16px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	color: #ffffff;
+}
+.pagination-item-current {
+	background-color: #ffffff;
+	border-radius: 12px;
+
+  	color: #323232;
+
+}
+
+.pagination-left-arrow {
+	color: rgba(255, 255, 255, 0.4);
+}
+.pagination-right-arrow {
+	color: #ffffff;
+}
+
+.pagination-item:hover, .pagintaion-item:focus {
+	background-color: rgba(255, 255, 255, 0.4);;
+	border-radius: 12px;
+}
