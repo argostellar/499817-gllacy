@@ -24,17 +24,32 @@ a {
 .main-header
 
 .main-navigation{
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 }
 
 .main-header-logo {
+	order: -2;
 	margin-top: 9px;
 	magrin-left: 52px;
 }
 
 .catalog-navigation {
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: column;
+
+
 	font-family: "Roboto", Arial, sans-serif;
   	font-size: 14px;
   	line-height: 16px;
@@ -43,6 +58,12 @@ a {
 }
 
 .site-navigation {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: row;
+	
 	font-family: "Roboto", Arial, sans-serif;
   	font-size: 16px;
   	line-height: 18px;
@@ -144,7 +165,10 @@ a {
 }
 
 
-.link
+.link {
+	color: #323232;
+
+}
 
 .visually-hidden {
 	position: absolute;
@@ -197,7 +221,10 @@ a {
 
 .container
 
-.main-slider
+.main-slider {
+	display: flex;
+}
+
 .slider1 {
 	background-image: url(../img/ice_cream_main1);
 }
@@ -231,6 +258,9 @@ a {
 }
 
 .order-bonus {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	
 }
 .raspberries {
@@ -256,6 +286,9 @@ a {
 }
 
 .hit-sales {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	
 }
 .hit-list
@@ -339,7 +372,7 @@ a {
 	color: #323232;
 }
 
-.new-in-the-blog p {
+.new-in-the-blog a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 24px;
 	line-heigt: 30px;
@@ -377,6 +410,10 @@ a {
 }
 
 .map {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
 	background-color: #e0e1cc;
 	
 }
@@ -491,7 +528,22 @@ a {
 	border-radius: 15px;
 }
 .main-footer {
+	list-style: none;
+	display: flex;
 	
+}
+.footer-social {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.footer-social 
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-info ul {
+	list-style: none;
 }
 
 .social-button {
