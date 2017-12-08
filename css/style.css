@@ -92,7 +92,7 @@ a {
 .login-link-button {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: px;
+	padding-left: 5px;
 	padding-right: 17px;
 
 	border-radius: 15px;
@@ -114,6 +114,8 @@ a {
 
 
 .button {
+	display: inline-block;
+
 	background-color: #ed5b3d;
 	color: #ffffff;
 
@@ -207,10 +209,13 @@ a {
 }
 .slider-control
 .slider-button {
+	padding: 17px 40px;
+	/*
 	padding-top: 17px;
 	padding-bottom: 17px;
 	padding-left: 40px;
 	padding-right: 40px;
+	*/
 
 	border-radius: 32px;
 
@@ -222,7 +227,7 @@ a {
 }
 .slider-title {
 	font-size: 60px;
-	line-height: 60,35px;
+	line-height: 60.35px;
 }
 
 .order-bonus {
@@ -258,10 +263,13 @@ a {
 	background-color: rgba(255, 255, 255, 0.6);
 }
 .quick-view-button {
+	padding: 14px 17px;
+	/*
 	padding-top: 14px;
 	padding-bottom: 14px;
 	padding-left: 17px;
 	padding-right: 17px;
+	*/
 
 	border-radius: 15px;
 
@@ -350,10 +358,13 @@ a {
 	
 }
 .subscribe-button {
+	padding: 14px 19px;
+	/*
 	padding-top: 14px;
 	padding-bottom: 14px;
 	padding-left: 19px;
 	padding-right: 19px;
+	*/
 
 	border-radius: 15px;
 
@@ -397,10 +408,13 @@ a {
 	
 }
 .feedback-form-button {
+	padding: 14px 24px;
+	/*
 	padding-top: 14px;
 	padding-bottom: 14px;
 	padding-left: 24px;
 	padding-right: 24px;
+	*/
 
 	border-radius: 15px;
 
@@ -413,10 +427,13 @@ a {
 }
 
 .send-button {
+	padding: 14px 19px;
+	/*
 	padding-top: 14px;
 	padding-bottom: 14px;
 	padding-left: 19px;
 	padding-right: 19px;
+	*/
 
 	border-radius: 15px;
 
@@ -428,11 +445,14 @@ a {
 	
 }
 .enter-button {
+	padding: 15px 25px;
+	/*
 	padding-top: 15px;
 	padding-bottom: 15px;
 
 	padding-left: 25px;
 	padding-right: 25px;
+	*/
 
 	border-radius: 15px;
 
@@ -460,10 +480,13 @@ a {
 }
 
 .order-button {
+	padding: 13px 15px;
+	/*
 	padding-top: 13px;
 	padding-bottom: 13px;
 	padding-left: 15px;
 	padding-right: 15px;
+	*/
 
 	border-radius: 15px;
 }
@@ -504,10 +527,13 @@ a {
 .pointer-left
 .pointer-right
 .filter-button {
+	padding: 10px 30px;
+	/*
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
+	*/
 
 	border-radius: 15px;
 	background-color: #a6b7ae;
