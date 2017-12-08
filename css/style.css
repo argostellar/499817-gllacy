@@ -21,7 +21,10 @@ a {
 
 }
 
-.main-header
+.main-header {
+	display: flex;
+	justify-content: space-between;
+}
 
 .main-navigation{
 	margin: 0;
@@ -285,13 +288,22 @@ a {
   	color: #ffffff;
 }
 
+
 .hit-sales {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	
 }
-.hit-list
+.hit-sales ul {
+	list-style: none;
+}
+
+.hit-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 .catalog-item:hover, .catalog-item:focus{
 	background-color: rgba(255, 255, 255, 0.6);
 }
@@ -341,10 +353,23 @@ a {
 .sale-preview
 
 .company-info {
+	display: flex;
 	background-color: #dcd0b6;
 	background-image: url(../img/bg_waffle.jpg);
+	background-repeat: no-repeat;
 	color: #323232;
 
+}
+
+.company-info-list .company-info-element{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.company-info ul {
+	list-style: none;
 }
 .company-info-header {
 	font-family: "Roboto", Arial, sans-serif;
@@ -412,6 +437,7 @@ a {
 .map {
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-end;
 	align-items: center;
 
 	background-color: #e0e1cc;
@@ -422,6 +448,7 @@ a {
 
 }
 .map-contact {
+
 	background-color: #fdfefe;
 	font-family: "Roboto", Arial, sans-serif;
 	
@@ -530,6 +557,7 @@ a {
 .main-footer {
 	list-style: none;
 	display: flex;
+	justify-content: space-between;
 	
 }
 .footer-social {
@@ -537,7 +565,7 @@ a {
 	flex-direction: row;
 	align-items: center;
 }
-.footer-social 
+
 .footer-social ul {
 	list-style: none;
 }
@@ -557,11 +585,20 @@ a {
   	font-weight: 400;
   	color: #ffffff;
 }
+
+.footer-info ul {
+	display: flex;
+	flex-direction: column;
+
+}
 .for-suppliers{
 	font-weight: 700;
 }
 
 .footer-copyright {
+	display: flex;
+	flex-direction: column;
+
 	font-family: "Roboto", Arial, sans-serif;
   	font-size: 12px;
   	line-height: 18px;
