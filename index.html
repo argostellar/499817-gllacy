@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>GllacyShop: Магазин мороженого Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
 </head>
 
@@ -84,7 +84,7 @@
         <label for="radio-hidden2"></label>
         <label for="radio-hidden3"></label>
       </div>
-     <!-- <a class="button page-button" href="catalog.html">Давайте оба!</a> -->
+      <!-- <a class="button page-button" href="catalog.html">Давайте оба!</a> -->
     </section>
     <section class="order-bonus">
       <h2 class="visually-hidden">Бонусы за заказ</h2>
@@ -153,23 +153,25 @@
         <li class="company-info-element"><img src="img/info-icon-thermometer.svg">Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
       </ul>
     </section>
-    <article class="new-in-the-blog">
-      <h3>Новое в нашем блоге</h3>
-      <a href="#">
+    <div class="unification-block">
+      <article class="new-in-the-blog">
+        <h3>Новое в нашем блоге</h3>
+        <a href="#">
         10 способов серверовки фруктовых щербетов к столу
       </a>
-    </article>
-    <section class="subscribe">
-      <h2 class="visually-hidden">Раздел подписки на рассылку</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-      <form action="#" method="post">
-        <p>
-          <label for="subscribe-field" aria-label="Электронная почта для рассылки"></label>
-          <input type="text" name="subscribe-e-mail" id="subscribe-field">
-        </p>
-        <button class="button subscribe-button ">Отправить</button>
-      </form>
-    </section>
+      </article>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Раздел подписки на рассылку</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+        <form action="#" method="post">
+          <p>
+            <label for="subscribe-field" aria-label="Электронная почта для рассылки"></label>
+            <input type="text" name="subscribe-e-mail" id="subscribe-field">
+          </p>
+          <button class="button subscribe-button ">Отправить</button>
+        </form>
+      </section>
+    </div>
     <section class="map">
       <h2 class="visually-hidden">Наше месторасположение</h2>
       <a class="map-image">
@@ -207,8 +209,8 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="footer-social">
-      <ul>
+    <div>
+      <ul class="footer-social">
         <li>
           <a class="social-button" href="#" aria-label="Twitter">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
