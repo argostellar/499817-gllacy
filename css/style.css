@@ -640,8 +640,7 @@ a {
 
 }
 .footer-info {
-	width: 45px;
-
+	
 	font-family: "Roboto", Arial, sans-serif;
   	font-size: 13px;
   	line-height: 18px;
@@ -650,12 +649,31 @@ a {
 }
 
 .footer-info ul {
+	width: 295px;
+
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 
 }
+
+
 .for-suppliers{
+	position: relative;
 	font-weight: 700;
+}
+
+.for-suppliers::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+    height: 25px;
+    top: 6px;
+    left: 10px;
+    
+	background-image: url(../img/heart.svg);
+	background-size: 18px 17px;
+	background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .footer-copyright {
