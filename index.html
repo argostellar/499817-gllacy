@@ -28,38 +28,42 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <div class="pop-up search-block">
-        <form action="#" method="post">
-          <p>
-            <label for="search-field" aria-label="Поиск"></label>
-            <input type="search" id="search-field" name="search" placeholder="Что ищем?">
-          </p>
-        </form>
+      <div class="user-navigation-wrapper">
+        <div class="pop-up search-block">
+          <form action="#" method="post">
+            <p>
+              <label for="search-field" aria-label="Поиск"></label>
+              <input type="search" id="search-field" name="search" placeholder="Что ищем?">
+            </p>
+          </form>
+        </div>
+        <a class="login-link-button" href="#">Вход</a>
+        <div class="pop-up user-navigation-block">
+          <form action="#" method="post">
+            <p>
+              <label for="e-mail-field" aria-label="Электронная почта"></label>
+              <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label for="password-field" aria-label="Пароль"></label>
+              <input type="text" name="password" id="password-field" placeholder="Пароль">
+            </p>
+            <button class="button enter-button">Войти</button>
+            <a class="link" href="#">Забыли пароль?</a>
+            <a class="link" href="#">Новая регистрация</a>
+          </form>
+        </div>
+        <button class="cart-button">Пусто</button>
+        <div class="pop-up cart-block" aria-label="Блок корзины">
+        </div>
       </div>
-      <a class="login-link-button" href="#">Вход</a>
-      <div class="pop-up user-navigation-block">
-        <form action="#" method="post">
-          <p>
-            <label for="e-mail-field" aria-label="Электронная почта"></label>
-            <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
-          </p>
-          <p>
-            <label for="password-field" aria-label="Пароль"></label>
-            <input type="text" name="password" id="password-field" placeholder="Пароль">
-          </p>
-          <button class="button enter-button">Войти</button>
-          <a class="link" href="#">Забыли пароль?</a>
-          <a class="link" href="#">Новая регистрация</a>
-        </form>
-      </div>
-      <button class="cart-button">Пусто</button>
-      <div class="pop-up cart-block" aria-label="Блок корзины">
-      </div>
+    </nav>
+    <p>
       <ul class="header-info">
         <li class="contacts-info">С 10 до 20, ежедневно</li>
         <li class="contacts-info"><a href="tel:+78124502525">8 812 450-25-25</a></li>
       </ul>
-    </nav>
+    </p>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
@@ -89,12 +93,12 @@
     <section class="order-bonus">
       <h2 class="visually-hidden">Бонусы за заказ</h2>
       <div class="raspberries">
-        <h3>Малинка даром!</h3>
+        <h3 class="order-bonus-title">Малинка даром!</h3>
         <p>При покупку 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <button class="button order-bonus-button">Хочу варенье!</button>
       </div>
       <div class="chocolate">
-        <h3>Шоколадки даром!</h3>
+        <h3 class="order-bonus-title">Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <button class="button order-bonus-button">Хочу шоколадки!</button>
       </div>
@@ -103,7 +107,7 @@
       <h2 class="visually-hidden">Хит продаж</h2>
       <ul class="hit-list">
         <li class="catalog-item">
-          <a href="catalog.html">
+          <a class="catalog-item-image" href="catalog.html">
     				<img src="img/ice_img1.jpg"  width="267" height="267" alt="Изображение мороженого">
     			</a>
           <span class="product-price">310<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
@@ -113,7 +117,7 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a href="catalog.html">
+          <a class="catalog-item-image" href="catalog.html">
     				<img src="img/ice_img2.jpg" width="267" height="267" alt="Изображение мороженого">
     			</a>
           <span class="product-price">380<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
@@ -123,7 +127,7 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a href="catalog.html">
+          <a class="catalog-item-image" href="catalog.html">
     				<img src="img/ice_img3.jpg" width="267" height="267" alt="Изображение мороженого">
     			</a>
           <span class="product-price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
@@ -133,7 +137,7 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a href="catalog.html">
+          <a class="catalog-item-image" href="catalog.html">
     				<img src="img/ice_img4.jpg" width="267" height="267" alt="Изображение мороженого">
     			</a>
           <span class="product-price">415<img class="rub" src="img/ruble.svg" alt="Рублей" width="31" height="36"><b>/кг</b></span>
@@ -155,7 +159,7 @@
     </section>
     <div class="unification-block">
       <article class="new-in-the-blog">
-        <h3>Новое в нашем блоге</h3>
+        <h3 class="new-itb-title">Новое в нашем блоге</h3>
         <a href="#">
         10 способов серверовки фруктовых щербетов к столу
       </a>
@@ -189,7 +193,7 @@
       </div>
       <div class="pop-up feedback" aria-label="Форма обратной связи">
         <button class="close-button">X</button>
-        <h3>Мы обязательно вам ответим!</h3>
+        <h3 class="feedback-pop-up-title">Мы обязательно вам ответим!</h3>
         <form action="#" method="post">
           <p>
             <label class="visually-hidden" for="feedback-name-field" aria-lable="Как вас зовут?"></label>
@@ -275,7 +279,7 @@
       </ul>
     </div>
     <div class="footer-info">
-      <ul>
+      <ul class="footer-info-list">
         <li class="for-suppliers"><img src="img/heart.svg"><strong><a href="#">Для поставщиков</a></strong></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>

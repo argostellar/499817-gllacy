@@ -24,6 +24,7 @@ a {
 .main-header {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .main-navigation{
@@ -143,6 +144,8 @@ a {
 	background-color: #ed5b3d;
 	color: #ffffff;
 
+	border: none;
+
 	padding: 2px;
 	border-radius: 5px;
 
@@ -221,7 +224,10 @@ a {
 
 }
 
-.header-info
+.header-info {
+	list-style: none;
+}
+
 .contacts-info
 
 .container {
@@ -294,12 +300,16 @@ a {
   	color: #ffffff;
 }
 
+.order-bonus-title {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 35px;
+  	line-height: 41px;
+  	font-weight: 700;
+  	color: #ffffff;
+}
 
 .hit-sales {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	
+
 }
 .hit-sales ul {
 	list-style: none;
@@ -310,6 +320,18 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 }
+.catalog-item {
+	width: 267px;
+
+}
+
+.catalog-item-image img {
+	border-radius: 50%; 
+}
+
+
+
+
 .catalog-item:hover, .catalog-item:focus{
 	background-color: rgba(255, 255, 255, 0.6);
 }
@@ -360,11 +382,15 @@ a {
 
 .company-info {
 	display: flex;
+	
+	color: #323232;
+
+}
+
+.company-info-list {
 	background-color: #dcd0b6;
 	background-image: url(../img/bg_waffle.jpg);
 	background-repeat: no-repeat;
-	color: #323232;
-
 }
 
 .company-info-list .company-info-element{
@@ -401,6 +427,14 @@ a {
 	line-height: 22px;
 	font-weight: 500;
 	color: #323232;
+}
+
+.new-itb-title {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 16px;
+  	line-height: 22px;
+  	font-weight: 500;
+  	color: #323232;
 }
 
 .new-in-the-blog a {
@@ -585,11 +619,17 @@ a {
 	list-style: none;
 }
 
+.footer-info-list li {
+	display: inline-block;
+}
+
 .social-button {
 	margin: 6px;
 
 }
 .footer-info {
+	width: 45px;
+
 	font-family: "Roboto", Arial, sans-serif;
   	font-size: 13px;
   	line-height: 18px;
@@ -616,11 +656,40 @@ a {
   	font-weight: 400;
   	color: #ffffff;
 }
+.feedback-pop-up-title {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 24px;
+  	line-height: 28px;
+  	font-weight: 500;
+  	color: #323232;
+}
 
-
-.breadcrumbs
+.breadcrumbs {
+	list-style: none;
+}
 .breadcrumbs-current
-.filters
+
+.filters{
+	width: 906px;
+	margin: 0;
+	
+}
+
+.filter-block-1 {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.filter-title {
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #ffffff;
+}
+
 .price-range
 .price-slide
 .price-pointer
