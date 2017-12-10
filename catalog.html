@@ -93,8 +93,8 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form>
-        <div class="filters-block-1">
-          <p>
+        <div class="filters-block">
+          <div class="filters-block-1">
             <label for="sorting-field filter-title">Сортировка:</label>
             <select name="sorting" id="sorting-field">
               <option value="popularity-sorting">по популярности</option>
@@ -102,8 +102,8 @@
               <option value="more-expensive-sorting">сначала дорогие</option>
               <option value="fat-content-sorting">по жирности</option>
             </select>
-          </p>
-          <p>
+          </div>
+          <div class="filters-block-2">
             <label for="price-range-field filter-title">Цена:</label>
             <input type="range" min="100 руб." max="500 руб." id="price-range-field">
             <div class="price-range">
@@ -113,57 +113,60 @@
                 <div class="pointer-right"></div>
               </div>
             </div>
-          </p>
-        </div>
-        <div class="filters-block-2">
-          <fieldset for="fat-content-field">
-            <legend class="visually-hidden">Жирность в процентах</legend>
-            <h3 class="filter-title">Жирность:</h3>
-            <p>
-              <label for="fat-content-0%">0%</label>
-              <input type="radio" name="fat-content-0%" id="fat-content-0%">
-            </p>
-            <p>
-              <label for="fat-content-less-10%">до 10%</label>
-              <input type="radio" name="fat-content-less-10%" id="fat-content-less-10%" checked>
-            </p>
-            <p>
-              <label for="fat-content-less-30%">до 30%</label>
-              <input type="radio" name="fat-content-less-30%" id="fat-content-less-30%">
-            </p>
-            <p>
-              <label for="fat-content-more-30%">выше 30%</label>
-              <input type="radio" name="fat-content-more-30%" id="fat-content-more-30%">
-            </p>
-          </fieldset>
-        </div>
-        <div class="filters-block-3">
-          <fieldset for="filler-field">
-            <legend class="visually-hidden">Различные наполнители для мороженого</legend>
-            <h3 class="filter-title">Наполнители:</h3>
-            <p>
-              <label for="chocolate-filler">шоколадные</label>
-              <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
-            </p>
-            <p>
-              <label for="sugar-powder-filler">сахарные присыпки</label>
-              <input type="checkbox" name="sugar-powder-filler" id="sugar-powder-filler" checked>
-            </p>
-            <p>
-              <label for="fruit-filler">фрукты</label>
-              <input type="checkbox" name="fruit-filler" id="fruit-filler">
-            </p>
-            <p>
-              <label for="syrup-filler">сиропы</label>
-              <input type="checkbox" name="syrup-filler" id="syrup-filler">
-            </p>
-            <p>
-              <label for="jam-filler">джемы</label>
-              <input type="checkbox" name="jam-filler" id="jam-filler">
-            </p>
-          </fieldset>
-        </div>
-        <button class="button filter-button">Применить</button>
+          </div>
+          <div class="filters-block-3">
+            <fieldset class="fat-content-field" for="fat-content-field">
+              <legend class="visually-hidden">Жирность в процентах</legend>
+              <h3 class="filter-title">Жирность:</h3>
+              <ul class="filter-fc-list">
+                <li>
+                  <label for="fat-content-0%">0%</label>
+                  <input type="radio" name="fat-content-0%" id="fat-content-0%">
+                </li>
+                <li>
+                  <label for="fat-content-less-10%">до 10%</label>
+                  <input type="radio" name="fat-content-less-10%" id="fat-content-less-10%" checked>
+                </li>
+                <li>
+                  <label for="fat-content-less-30%">до 30%</label>
+                  <input type="radio" name="fat-content-less-30%" id="fat-content-less-30%">
+                </li>
+                <li>
+                  <label for="fat-content-more-30%">выше 30%</label>
+                  <input type="radio" name="fat-content-more-30%" id="fat-content-more-30%">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filters-block-4">
+            <fieldset class="filler-field" for="filler-field">
+              <legend class="visually-hidden">Различные наполнители для мороженого</legend>
+              <h3 class="filter-title">Наполнители:</h3>
+              <ul class="filter-filler-list">
+                <li>
+                  <label for="chocolate-filler">шоколадные</label>
+                  <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
+                </li>
+                <li>
+                  <label for="sugar-powder-filler">сахарные присыпки</label>
+                  <input type="checkbox" name="sugar-powder-filler" id="sugar-powder-filler" checked>
+                </li>
+                <li>
+                  <label for="fruit-filler">фрукты</label>
+                  <input type="checkbox" name="fruit-filler" id="fruit-filler">
+                </li>
+                <li>
+                  <label for="syrup-filler">сиропы</label>
+                  <input type="checkbox" name="syrup-filler" id="syrup-filler">
+                </li>
+                <li>
+                  <label for="jam-filler">джемы</label>
+                  <input type="checkbox" name="jam-filler" id="jam-filler">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button class="button filter-button">Применить</button>
         </div>
       </form>
     </section>

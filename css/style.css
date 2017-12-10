@@ -681,9 +681,13 @@ a {
 }
 .breadcrumbs-current
 
-.filters{
+.filters-block {
 	width: 906px;
 	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
 	
 }
 
@@ -692,6 +696,30 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+.filter-block-2 {
+	display: flex;
+}
+.filter-block-3 {
+	display: flex;
+}
+.filter-block-4 {
+	display: flex;
+}
+
+.fat-content-field ul {
+	list-style: none;
+}
+.filter-fc-list {
+	display: flex;
+	justify-content: space-around;
+}
+.filler-field ul {
+	list-style: none;
+}
+.filter-filler-list {
+	display: flex;
+	justify-content: space-around;
 }
 
 .filter-title {
