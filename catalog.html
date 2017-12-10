@@ -17,7 +17,7 @@
         </a>
       <ul class="site-navigation">
         <li class="main-navigation-current"><a href="catalog.html">Каталог</a>
-          <ul>
+          <ul class="catalog-navigation">
             <li class="new-in-the-catalog"><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -32,36 +32,30 @@
         <form action="#" method="post">
           <p>
             <label for="search-field" aria-label="Поиск"></label>
-            <input type="search" id="search-field" name="search" value="Что ищем?">
+            <input type="search" id="search-field" name="search" placeholder="Что ищем?">
           </p>
         </form>
       </div>
-      <ul class="user-navigation">
-        <li>
-          <a class="login-link-button" href="#">Вход</a>
-        </li>
-        <li>
-          <div class="pop-up user-navigation-block">
-            <form action="#" method="post">
-              <p>
-                <label for="e-mail-field" aria-label="Электронная почта"></label>
-                <input type="text" name="e-mail" id="e-mail-field" value="Электронная почта">
-              </p>
-              <p>
-                <label for="password-field" aria-label="Пароль"></label>
-                <input type="text" name="password" id="password-field" value="Пароль">
-              </p>
-              <button class="button enter-button">Войти</button>
-              <a class="link" href="#">Забыли пароль?</a>
-              <a class="link" href="#">Новая регистрация</a>
-            </form>
-          </div>
-        </li>
-      </ul>
+      <a class="login-link-button" href="#">Вход</a>
+      <div class="pop-up user-navigation-block">
+        <form action="#" method="post">
+          <p>
+            <label for="e-mail-field" aria-label="Электронная почта"></label>
+            <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label for="password-field" aria-label="Пароль"></label>
+            <input type="text" name="password" id="password-field" placeholder="Пароль">
+          </p>
+          <button class="button enter-button">Войти</button>
+          <a class="link" href="#">Забыли пароль?</a>
+          <a class="link" href="#">Новая регистрация</a>
+        </form>
+      </div>
       <button class="cart-button">2 товара</button>
       <div class="pop-up cart-block" aria-label="Блок корзины">
         <table class="cart-block-table">
-          <tr>
+          <tr class="cart-table-text">
             <td>
               <button type="button" class="close-button-small">X</button>
             </td>
@@ -70,7 +64,7 @@
             <td>1,5 кг х <span class="grey-text">200 руб.</span></td>
             <td>300 руб.</td>
           </tr>
-          <tr>
+          <tr class="cart-table-text">
             <td>
               <button type="button" class="close-button-small">X</button>
             </td>

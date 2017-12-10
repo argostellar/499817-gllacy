@@ -193,6 +193,7 @@ a {
 	padding-right: 35px;
 
 	border-radius: 15px;
+	border: none;
 
 	font-family: "Roboto", Arial, sans-serif;
   	font-size: 14px;
@@ -221,7 +222,18 @@ a {
 }
 .cart-block-table {
 	border-bottom: 1px solid #cacac7;
+}
 
+.cart-table-text td{
+	font-family: "Roboto", Arial, sans-serif;
+  	font-size: 13px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #323232;
+}
+
+.grey-text {
+	color: rgba(50, 50, 50, 0.6);
 }
 
 .header-info {
