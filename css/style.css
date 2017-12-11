@@ -240,7 +240,7 @@ a {
 	list-style: none;
 }
 
-.contacts-info
+.contacts-info {}
 
 .container {
     width: 1146px;
@@ -261,7 +261,7 @@ a {
 .slider3 {
 	background-image: url(../img/ice_cream_main3);
 }
-.slider-control
+.slider-control {}
 .slider-button {
 	padding: 17px 40px;
 	/*
@@ -389,8 +389,9 @@ a {
 	color: #ffffff;
 	
 }
-.rub
-.sale-preview
+.rub {}
+
+.sale-preview {}
 
 .company-info {
 	display: flex;
@@ -633,6 +634,7 @@ a {
 
 .footer-info-list li {
 	display: inline-block;
+	margin: 0 5px;
 }
 
 .social-button {
@@ -651,6 +653,7 @@ a {
 .footer-info ul {
 	width: 295px;
 
+
 	display: flex;
 	flex-wrap: wrap;
 
@@ -667,8 +670,8 @@ a {
 	position: absolute;
 	width: 25px;
     height: 25px;
-    top: 6px;
-    left: 10px;
+    
+    left: -20px;
     
 	background-image: url(../img/heart.svg);
 	background-size: 18px 17px;
@@ -697,7 +700,7 @@ a {
 .breadcrumbs {
 	list-style: none;
 }
-.breadcrumbs-current
+.breadcrumbs-current {}
 
 .filters-block {
 	width: 906px;
@@ -748,11 +751,12 @@ a {
   	color: #ffffff;
 }
 
-.price-range
-.price-slide
-.price-pointer
-.pointer-left
-.pointer-right
+.price-range {}
+.price-slide {}
+.price-pointer {}
+.pointer-left {}
+.pointer-right {}
+
 .filter-button {
 	padding: 10px 30px;
 	/*
@@ -810,8 +814,24 @@ a {
 
 .catalog-list {
 	display: flex;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	flex-direction: row;
 
 	list-style: none;
+}
+
+.user-navigation-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.search-button {
+	background-image: url(../img/lens-normal.svg);
+}
+
+.search-button:hover, .search-button:focus {
+	background-image: url(../img/lens-active.svg);
 }

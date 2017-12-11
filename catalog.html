@@ -28,60 +28,71 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <div class="pop-up search-block">
-        <form action="#" method="post">
-          <p>
-            <label for="search-field" aria-label="Поиск"></label>
-            <input type="search" id="search-field" name="search" placeholder="Что ищем?">
-          </p>
-        </form>
+      <div class="user-navigation-wrapper">
+        <div class="user-navigation">
+          <a class="search-button"></a>
+          <div class="pop-up search-block">
+            <form action="#" method="post">
+              <p>
+                <label for="search-field" aria-label="Поиск"></label>
+                <input type="search" id="search-field" name="search" placeholder="Что ищем?">
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="user-navigation">
+          <a class="login-link-button" href="#">Вход</a>
+          <div class="pop-up user-navigation-block">
+            <form action="#" method="post">
+              <p>
+                <label for="e-mail-field" aria-label="Электронная почта"></label>
+                <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label for="password-field" aria-label="Пароль"></label>
+                <input type="text" name="password" id="password-field" placeholder="Пароль">
+              </p>
+              <button class="button enter-button">Войти</button>
+              <a class="link" href="#">Забыли пароль?</a>
+              <a class="link" href="#">Новая регистрация</a>
+            </form>
+          </div>
+        </div>
+        <div class="user-navigation">
+          <button class="cart-button">2 товара</button>
+          <div class="pop-up cart-block" aria-label="Блок корзины">
+            <table class="cart-block-table">
+              <tr class="cart-table-text">
+                <td>
+                  <button type="button" class="close-button-small">X</button>
+                </td>
+                <td><img src="img/ice_img1_mini.png" width="33" height="33" alt="Маленькое изображение мороженого"></td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х <span class="grey-text">200 руб.</span></td>
+                <td>300 руб.</td>
+              </tr>
+              <tr class="cart-table-text">
+                <td>
+                  <button type="button" class="close-button-small">X</button>
+                </td>
+                <td><img src="img/ice_img3_mini.png" width="33" height="33" alt="Маленькое изображение мороженого"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х <span class="grey-text">300 руб.</span></td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <p class="bold-text">Итого: 750 руб.</p>
+            <a class="button order-button" href="#">Оформить заказ</a>
+          </div>
+        </div>
       </div>
-      <a class="login-link-button" href="#">Вход</a>
-      <div class="pop-up user-navigation-block">
-        <form action="#" method="post">
-          <p>
-            <label for="e-mail-field" aria-label="Электронная почта"></label>
-            <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
-          </p>
-          <p>
-            <label for="password-field" aria-label="Пароль"></label>
-            <input type="text" name="password" id="password-field" placeholder="Пароль">
-          </p>
-          <button class="button enter-button">Войти</button>
-          <a class="link" href="#">Забыли пароль?</a>
-          <a class="link" href="#">Новая регистрация</a>
-        </form>
-      </div>
-      <button class="cart-button">2 товара</button>
-      <div class="pop-up cart-block" aria-label="Блок корзины">
-        <table class="cart-block-table">
-          <tr class="cart-table-text">
-            <td>
-              <button type="button" class="close-button-small">X</button>
-            </td>
-            <td><img src="img/ice_img1_mini.png" width="33" height="33" alt="Маленькое изображение мороженого"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х <span class="grey-text">200 руб.</span></td>
-            <td>300 руб.</td>
-          </tr>
-          <tr class="cart-table-text">
-            <td>
-              <button type="button" class="close-button-small">X</button>
-            </td>
-            <td><img src="img/ice_img3_mini.png" width="33" height="33" alt="Маленькое изображение мороженого"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг х <span class="grey-text">300 руб.</span></td>
-            <td>450 руб.</td>
-          </tr>
-        </table>
-        <p class="bold-text">Итого: 750 руб.</p>
-        <a class="button order-button" href="#">Оформить заказ</a>
-      </div>
+    </nav>
+    <p>
       <ul class="header-info">
         <li class="contacts-info">С 10 до 20, ежедневно</li>
         <li class="contacts-info"><a href="tel:+78124502525">8 812 450-25-25</a></li>
       </ul>
-    </nav>
+    </p>
   </header>
   <main class="container">
     <h1>Сливочное мороженое</h1>
@@ -92,82 +103,80 @@
     </ul>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form>
-        <div class="filters-block">
-          <div class="filters-block-1">
-            <label for="sorting-field filter-title">Сортировка:</label>
-            <select name="sorting" id="sorting-field">
-              <option value="popularity-sorting">по популярности</option>
-              <option value="less-expensive-sorting">сначала недорогие</option>
-              <option value="more-expensive-sorting">сначала дорогие</option>
-              <option value="fat-content-sorting">по жирности</option>
-            </select>
-          </div>
-          <div class="filters-block-2">
-            <label for="price-range-field filter-title">Цена:</label>
-            <input type="range" min="100 руб." max="500 руб." id="price-range-field">
-            <div class="price-range">
-              <div class="price-slide"></div>
-              <div class="price-pointer">
-                <div class="pointer-left"></div>
-                <div class="pointer-right"></div>
-              </div>
+      <form class="filters-block">
+        <div class="filters-block-1">
+          <label class="filter-title" for="sorting-field">Сортировка:</label>
+          <select name="sorting" id="sorting-field">
+            <option value="popularity-sorting">по популярности</option>
+            <option value="less-expensive-sorting">сначала недорогие</option>
+            <option value="more-expensive-sorting">сначала дорогие</option>
+            <option value="fat-content-sorting">по жирности</option>
+          </select>
+        </div>
+        <div class="filters-block-2">
+          <label class="filter-title" for="price-range-field">Цена:</label>
+          <input type="range" min="100 руб." max="500 руб." id="price-range-field">
+          <div class="price-range">
+            <div class="price-slide"></div>
+            <div class="price-pointer">
+              <div class="pointer-left"></div>
+              <div class="pointer-right"></div>
             </div>
           </div>
-          <div class="filters-block-3">
-            <fieldset class="fat-content-field" for="fat-content-field">
-              <legend class="visually-hidden">Жирность в процентах</legend>
-              <h3 class="filter-title">Жирность:</h3>
-              <ul class="filter-fc-list">
-                <li>
-                  <label for="fat-content-0%">0%</label>
-                  <input type="radio" name="fat-content-0%" id="fat-content-0%">
-                </li>
-                <li>
-                  <label for="fat-content-less-10%">до 10%</label>
-                  <input type="radio" name="fat-content-less-10%" id="fat-content-less-10%" checked>
-                </li>
-                <li>
-                  <label for="fat-content-less-30%">до 30%</label>
-                  <input type="radio" name="fat-content-less-30%" id="fat-content-less-30%">
-                </li>
-                <li>
-                  <label for="fat-content-more-30%">выше 30%</label>
-                  <input type="radio" name="fat-content-more-30%" id="fat-content-more-30%">
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="filters-block-4">
-            <fieldset class="filler-field" for="filler-field">
-              <legend class="visually-hidden">Различные наполнители для мороженого</legend>
-              <h3 class="filter-title">Наполнители:</h3>
-              <ul class="filter-filler-list">
-                <li>
-                  <label for="chocolate-filler">шоколадные</label>
-                  <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
-                </li>
-                <li>
-                  <label for="sugar-powder-filler">сахарные присыпки</label>
-                  <input type="checkbox" name="sugar-powder-filler" id="sugar-powder-filler" checked>
-                </li>
-                <li>
-                  <label for="fruit-filler">фрукты</label>
-                  <input type="checkbox" name="fruit-filler" id="fruit-filler">
-                </li>
-                <li>
-                  <label for="syrup-filler">сиропы</label>
-                  <input type="checkbox" name="syrup-filler" id="syrup-filler">
-                </li>
-                <li>
-                  <label for="jam-filler">джемы</label>
-                  <input type="checkbox" name="jam-filler" id="jam-filler">
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <button class="button filter-button">Применить</button>
         </div>
+        <div class="filters-block-3">
+          <fieldset class="fat-content-field" for="fat-content-field">
+            <legend class="visually-hidden">Жирность в процентах</legend>
+            <h3 class="filter-title">Жирность:</h3>
+            <ul class="filter-fc-list">
+              <li>
+                <label for="fat-content-0%">0%</label>
+                <input type="radio" name="fat-content-0%" id="fat-content-0%">
+              </li>
+              <li>
+                <label for="fat-content-less-10%">до 10%</label>
+                <input type="radio" name="fat-content-less-10%" id="fat-content-less-10%" checked>
+              </li>
+              <li>
+                <label for="fat-content-less-30%">до 30%</label>
+                <input type="radio" name="fat-content-less-30%" id="fat-content-less-30%">
+              </li>
+              <li>
+                <label for="fat-content-more-30%">выше 30%</label>
+                <input type="radio" name="fat-content-more-30%" id="fat-content-more-30%">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="filters-block-4">
+          <fieldset class="filler-field" for="filler-field">
+            <legend class="visually-hidden">Различные наполнители для мороженого</legend>
+            <h3 class="filter-title">Наполнители:</h3>
+            <ul class="filter-filler-list">
+              <li>
+                <label for="chocolate-filler">шоколадные</label>
+                <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
+              </li>
+              <li>
+                <label for="sugar-powder-filler">сахарные присыпки</label>
+                <input type="checkbox" name="sugar-powder-filler" id="sugar-powder-filler" checked>
+              </li>
+              <li>
+                <label for="fruit-filler">фрукты</label>
+                <input type="checkbox" name="fruit-filler" id="fruit-filler">
+              </li>
+              <li>
+                <label for="syrup-filler">сиропы</label>
+                <input type="checkbox" name="syrup-filler" id="syrup-filler">
+              </li>
+              <li>
+                <label for="jam-filler">джемы</label>
+                <input type="checkbox" name="jam-filler" id="jam-filler">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <button class="button filter-button">Применить</button>
       </form>
     </section>
     <section>
@@ -297,7 +306,7 @@
     </section>
     <ul class="pagination-list">
       <li class="pagination-item pagination-left-arrow">
-        <</li>
+        </li>
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>

@@ -29,32 +29,39 @@
         <li><a href="#">О компании</a></li>
       </ul>
       <div class="user-navigation-wrapper">
-        <div class="pop-up search-block">
-          <form action="#" method="post">
-            <p>
-              <label for="search-field" aria-label="Поиск"></label>
-              <input type="search" id="search-field" name="search" placeholder="Что ищем?">
-            </p>
-          </form>
+        <div class="user-navigation">
+          <a class="search-button"></a>
+          <div class="pop-up search-block">
+            <form action="#" method="post">
+              <p>
+                <label for="search-field" aria-label="Поиск"></label>
+                <input type="search" id="search-field" name="search" placeholder="Что ищем?">
+              </p>
+            </form>
+          </div>
         </div>
-        <a class="login-link-button" href="#">Вход</a>
-        <div class="pop-up user-navigation-block">
-          <form action="#" method="post">
-            <p>
-              <label for="e-mail-field" aria-label="Электронная почта"></label>
-              <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
-            </p>
-            <p>
-              <label for="password-field" aria-label="Пароль"></label>
-              <input type="text" name="password" id="password-field" placeholder="Пароль">
-            </p>
-            <button class="button enter-button">Войти</button>
-            <a class="link" href="#">Забыли пароль?</a>
-            <a class="link" href="#">Новая регистрация</a>
-          </form>
+        <div class="user-navigation">
+          <a class="login-link-button" href="#">Вход</a>
+          <div class="pop-up user-navigation-block">
+            <form action="#" method="post">
+              <p>
+                <label for="e-mail-field" aria-label="Электронная почта"></label>
+                <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label for="password-field" aria-label="Пароль"></label>
+                <input type="text" name="password" id="password-field" placeholder="Пароль">
+              </p>
+              <button class="button enter-button">Войти</button>
+              <a class="link" href="#">Забыли пароль?</a>
+              <a class="link" href="#">Новая регистрация</a>
+            </form>
+          </div>
         </div>
-        <button class="cart-button">Пусто</button>
-        <div class="pop-up cart-block" aria-label="Блок корзины">
+        <div class="user-navigation">
+          <button class="cart-button">Пусто</button>
+          <div class="pop-up cart-block" aria-label="Блок корзины">
+          </div>
         </div>
       </div>
     </nav>
@@ -280,7 +287,8 @@
     </div>
     <div class="footer-info">
       <ul class="footer-info-list">
-        <li class="for-suppliers"><img src="img/heart.svg"><strong><a href="#">Для поставщиков</a></strong></li>
+        <li class="for-suppliers"><a href="#">Для поставщиков</a></strong>
+        </li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
